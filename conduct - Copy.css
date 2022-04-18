@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background:url('profile29.jpg');
+  background-size: cover;
+  background-attachment: fixed ;
+}
+.sign-up-form
+{
+  background-color: rgba(26, 103, 155, 0.7);
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 0px;
+}
+.sign-up-form h1
+{
+  color: #1985d7;
+  margin-bottom: 30px;
+}
+
+#input-box
+{
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(91, 92, 94, 0.7);
+}
+
+#input-box input[type='text']
+{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.btn
+{  
+color:#fff;
+width: 100%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 10px 0;
+border: none;
+outline: none;
+background-color: #1c8adb;
+cursor: pointer;
+}
