@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLL</title>
+    <link rel="stylesheet" href="vote.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+  
+</head>
+<body>
+    <div class="wrapper">
+      <h1 style="font-family:courier;">RAHUL's Contest</h1>
+<header>WHO IS THE HACKER?</header>
+<div class="poll-area">
+<input type="checkbox" name="poll" id="opt-1">
+<input type="checkbox" name="poll" id="opt-2">
+<input type="checkbox" name="poll" id="opt-3">
+<input type="checkbox" name="poll" id="opt-4">
+
+
+<label for="opt-1" class="opt-1">
+  <div class="row">
+   <div class="column">
+    <span class="circle"></span>
+    <span class="text">ANKIT</span>
+  </div>
+  <span class="percent">20%</span>
+  </div>
+ <div class="progress" id="pstyle1" style='--w:20'></div>
+</label>
+
+<label for="opt-2" class="opt-2">
+    <div class="row">
+     <div class="column">
+      <span class="circle"></span>
+      <span class="text">RAHUL</span>
+    </div>
+    <span class="percent">15%</span>
+    </div>
+   <div class="progress" id="pstyle2" style='--w:15'></div>
+  </label>
+
+  <label for="opt-3" class="opt-3">
+    <div class="row">
+     <div class="column">
+      <span class="circle"></span>
+      <span class="text">AMAN</span>
+    </div>
+    <span class="percent">25%</span>
+    </div>
+   <div class="progress" id="pstyle3" style='--w:25'></div>
+</label>
+
+<label for="opt-4" class="opt-4">
+    <div class="row">
+     <div class="column">
+      <span class="circle"></span>
+      <span class="text">COMDAR</span>
+    </div>
+    <span class="percent">40%</span>
+    </div>
+   <div class="progress" id="pstyle4" style='--w:40'></div>
+</label>
+<button class="btn" type="button" onclick="submit()">Submit</button>
+</div>
+</div>
+
+
+</body>
+
+<script>
+  const firebaseConfig = {
+//firebase config stuff
+  apiKey: "AIzaSyAOO6BwNEh97hjOdZ1_o5E9PnZEe3RfIZA",
+  authDomain: "polling-1c685.firebaseapp.com",
+  databaseURL: "https://polling-1c685-default-rtdb.firebaseio.com",
+  projectId: "polling-1c685",
+  storageBucket: "polling-1c685.appspot.com",
+  messagingSenderId: "197544694710",
+  appId: "1:197544694710:web:2149ae7f04342764596717",
+  measurementId: "G-9YXQC0HFL4"
+};
+// Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = firebase.auth();
+</script>
+</html>

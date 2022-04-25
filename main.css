@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background:url('profile2.jpg');
+    background-size: cover;
+    background-attachment: fixed ;
+  }
+  .sign-up-form
+{
+  background-color: rgba(26, 103, 155, 0.7);
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 0px;
+}
+.sign-up-form h1
+{
+  color: #19d7d4;
+  margin-bottom: 30px;
+}
+
+
+.btn
+{  
+color:#fff;
+width: 100%;
+padding: 10px;
+border-radius: 30px;
+font-size: 35px;
+margin: 10px 0;
+border: none;
+outline: none;
+background-color: #08b9ef;
+cursor: pointer;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+    width: 100%;     
+  }
+  button{
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 5px solid #10ede5;
+    background: transparent;
+    color:rgb(240, 95, 17);
+    cursor: pointer;
+  }
+  .Button{
+    font-size: 30px;
+  }
+
+  #create
+{
+  padding: 2rem;
+  border-radius: 15px;
+  backgroud: rgba(194, 155, 28, 0.7);
+}
+
+#create input[type='radio text']
+{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <title>INSTANT POLL</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+ 
+</head>
+
+
+<body>
+    <div class="navbar">
+        <button class="open-button" onclick="openForm()">CONDUCT POLL</button>
+        <button class="btn btn-danger" onclick="logout()">Logout</button>
+        <button class="poll_button" id="lisa" onclick="myPolls()">My Polls</button>
+    </div>
+
+    <ul id="list">
+
+    </ul>
+
+    <div class="sign-up-form" id="myForm">
+        <form id="create" class="form-container">
+            <h1>CREATE A POLL</h1>
+
+
+            <input type="radio text" placeholder="TYPE YOUR QUESTION" name="name" id="question" required>
+            <label for="name"><b>QUESTION</b></label><br>
+
+            <input type="radio text" placeholder="Enter option1" name="option1" id="pollop1" required>
+            <label for="option1"><b>option1</b></label><br>
+
+            <input type="radio text" placeholder="Enter option2" name="option2" id="pollop2" required>
+            <label for="option2"><b>option2</b></label><br>
+
+            <input type="radio text" placeholder="Enter option3" name="option3" id="pollop3" required>
+            <label for="option3"><b>option3</b></label><br>
+
+            <input type="radio text" placeholder="Enter option4" name="option4" id="pollop4" required>
+            <label for="option4"><b>option4</b></label><br>
+
+            <button type="submit" class="btn">Create</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAOO6BwNEh97hjOdZ1_o5E9PnZEe3RfIZA",
+    authDomain: "polling-1c685.firebaseapp.com",
+    databaseURL: "https://polling-1c685-default-rtdb.firebaseio.com",
+    projectId: "polling-1c685",
+    storageBucket: "polling-1c685.appspot.com",
+    messagingSenderId: "197544694710",
+    appId: "1:197544694710:web:2149ae7f04342764596717",
+    measurementId: "G-9YXQC0HFL4"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
